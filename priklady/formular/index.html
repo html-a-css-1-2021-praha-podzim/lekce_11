@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formuláře</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Adresa pro odeslání formuláře a zobrazení odeslaných dat: "http://formular.itgirls.cz/" -->
+    <form action="http://formular.itgirls.cz/" method="POST">
+      <label for="krestni-jmeno">Křestní jméno:</label>
+      <input type="text" name="jmeno" id="krestni-jmeno" />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+
+      <label for="telefon">Telefon:</label>
+      <input type="tel" name="tel" id="telefon" />
+
+      <label for="datum">Datum narození:</label>
+      <input type="date" name="datum" id="datum" min="2021-11-30" />
+
+      <label>Pohlaví:</label>
+      <br />
+      <label for="muz">
+        <input type="radio" name="pohlavi" id="muz" value="muz" />Muž</label
+      >
+      <label for="zena">
+        <input type="radio" name="pohlavi" id="zena" value="zena" />Žena</label
+      >
+      <br />
+
+      <button>Odeslat</button>
+    </form>
+  </body>
+</html>

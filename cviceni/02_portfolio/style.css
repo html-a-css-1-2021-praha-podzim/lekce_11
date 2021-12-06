@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+/*-----------------------------------*/
+
+body {
+  text-align: center;
+}
+
+nav div,
+.projects div,
+h4 {
+  display: inline-block;
+}
+
+.project {
+  background-image: url(https://placekitten.com/200/300);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 200px;
+  position: relative;
+}
+
+.project h4 {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+}
+
+.project a {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+}
