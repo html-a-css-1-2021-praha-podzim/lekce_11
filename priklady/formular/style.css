@@ -1,8 +1,14 @@
-input {
+input,
+textarea {
   display: block;
   margin-bottom: 1rem;
+  border: 2px solid red;
 }
 
 [type='radio'] {
   display: inline;
+}
+
+input:focus {
+  border: 2px solid blue;
 }

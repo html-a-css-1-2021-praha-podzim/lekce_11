@@ -9,15 +9,15 @@
 
   <body>
     <!-- Adresa pro odeslání formuláře a zobrazení odeslaných dat: "http://formular.itgirls.cz/" -->
-    <form action="http://formular.itgirls.cz/" method="POST">
+    <form action="http://formular.itgirls.cz/" method="POST" autocomplete="off">
       <label for="krestni-jmeno">Křestní jméno:</label>
       <input type="text" name="jmeno" id="krestni-jmeno" />
 
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" />
+      <label for="adresa">Adresa:</label>
+      <input type="email" name="adresa" id="adresa" />
 
       <label for="telefon">Telefon:</label>
-      <input type="tel" name="tel" id="telefon" />
+      <input type="tel" name="tel" id="telefon" required />
 
       <label for="datum">Datum narození:</label>
       <input type="date" name="datum" id="datum" min="2021-11-30" />
@@ -32,6 +32,40 @@
       >
       <br />
 
+      <label for="number">Oblíbené číslo</label>
+      <input type="number" name="number" id="number" value="0" />
+
+      <label for="heslo">Moje heslo</label>
+      <input type="password" name="heslo" id="heslo" />
+
+      <label for="barva">Pěkná barva</label>
+      <input type="color" name="barva" id="barva" />
+
+      <label for="soubor">Vložte soubor</label>
+      <input type="file" name="soubor" id="soubor" />
+
+      <label for="souhlas">Souhlasím se zasíláním spamu</label>
+      <input
+        type="checkbox"
+        name="souhlas"
+        id="souhlas"
+        value="souhlasim"
+        checked
+      />
+
+      <input type="hidden" name="czechitas" value="tajne-heslo" />
+
+      <label for="zprava">Napiš mi</label>
+      <textarea name="zprava" id="zprava" cols="30" rows="10"></textarea>
+      <br />
+      <br />
+      <label for="auta">Vyber si auto</label>
+      <select name="auta" id="auta">
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="ford">Ford</option>
+      </select>
+      <br />
       <button>Odeslat</button>
     </form>
   </body>
